@@ -668,3 +668,10 @@ html, body {
   color: white; /* Set text color to white */
   background-color: linear-gradient(to right, rgba(67, 32, 193, 0.334), rgba(31, 32, 31, 0.537) 90%);
 }
+.hole-content .lower-wit .netflix p {
+  margin-top: -95px;
+  margin-left: 185px;
+  font-size: 30px; 
+  color: white; /* Set text color to white */
+  background-color: linear-gradient(to right, rgba(67, 32, 193, 0.334), rgba(31, 32, 31, 0.537) 90%);
+}
