@@ -1,0 +1,670 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  background-color: #232B2B;
+}
+
+.headder {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  background-color: #232B2B;
+  /* border: 2px solid green; */
+}
+
+.icone i {
+  padding-left: 20px;
+  padding-top: 12px;
+  font-size: 30px;
+}
+
+.para {
+  white-space: nowrap;
+}
+
+.para p {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 13px;
+}
+
+.search-bar {
+  /* padding-right: 200px; */
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hoel-search-bar {
+  border-radius: 7px;
+  background-color: #3B444B;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hoel-search-bar {
+  padding-left: 10px;
+  display: flex;
+}
+
+.search-bar input {
+  width: 600px;
+  height: 35px;
+  border: none;
+  background-color: transparent;
+}
+
+.search-bar i {
+  margin-top: 8px;
+  padding-right: 10px;
+  font-size: 15px;
+}
+
+.search-bar i:hover {
+  cursor: pointer;
+}
+
+.login {
+  margin-top: 8px;
+  margin-left: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #b2b2b2;
+  font-size: 13px;
+}
+
+.login:hover {
+  cursor: pointer;
+}
+
+/* Main .hole-content */
+
+.hole-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid white; */
+}
+
+.hole-content .side-bar {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  width: 70px;
+  height: 100%;
+  position: fixed;
+}
+
+.side-bar .home-icone {
+  width: 100%;
+  height: 80px;
+  /* border: 2px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+  transition: all 0.5s;
+}
+
+.side-bar .home-icone i {
+  font-size: 15px;
+  color: #BABAB3;
+  transition: all 0.5s;
+}
+
+.side-bar .home-icone i:hover{
+  color: white;
+}
+
+.side-bar .home-icone p:hover{
+  color: white;
+}
+
+.side-bar .home-icone p {
+  font-size: small;
+  font-weight: lighter;
+  color: #BABAB3;
+}
+
+.side-bar .apps-icone {
+  width: 100%;
+  height: 80px;
+  /* border: 2px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+  transition: all 0.5s;
+}
+
+.side-bar .home-icone:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  color: #D7D7E0;
+}
+
+.side-bar .apps-icone:hover{
+  cursor: pointer;
+  transform: scale(1.3);
+}
+
+.side-bar .apps-icone i {
+  font-size: 15px;
+  color: #BABAB3;
+}
+
+.side-bar .apps-icone p {
+  font-size: small;
+  font-weight: lighter;
+  color: #BABAB3;
+}
+
+.side-bar .apps-icone i:hover{
+  color: white;
+}
+
+.side-bar .apps-icone p:hover{
+  color: white;
+}
+
+.side-bar .game-icone {
+  border-radius: 15px;
+  width: 100%;
+  height: 80px;
+  /* border: 2px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+  transition: all 0.5s;
+}
+
+.side-bar .game-icone:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+
+.side-bar .game-icone i {
+  font-size: 15px;
+  color: #BABAB3;
+}
+
+.side-bar .game-icone i:hover{
+  color: white;
+}
+
+.side-bar .game-icone p:hover{
+  color: white;
+}
+
+.side-bar .game-icone p {
+  font-size: small;
+  font-weight: lighter;
+  color: #BABAB3;
+}
+
+body::-webkit-scrollbar {
+  width: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #243795;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #060606; /* Change this to your desired track color */
+}
+
+/* Horizontal Sliding content */
+
+.hole-content .scrolling-div .microsoft-office {
+  border-radius: 12px;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 750px;
+  height: 433px;
+  /* border: 2px solid palevioletred; */
+  background-image: url('msoft.jpeg');
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.5s;
+  box-shadow: 0 15px 90px -15px rgba(54, 64, 155, 0.81); /* Adjust values accordingly */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  
+}
+
+.hole-content .scrolling-div .microsoft-office:hover{
+  transform: scale(1.03);
+}
+
+.hole-content .scrolling-div .microsoft-office h2 {
+  padding-top: 25px;
+  padding-left: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: normal;
+
+}
+
+.hole-content .scrolling-div .car-race {
+ 
+  border-radius: 1px;
+  margin-right: 20px;
+
+  width: 750px;
+  height: 420px;
+  margin-top: 10px;
+  background-image: url('car-race.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s;
+  box-shadow: 0 15px 90px -15px rgba(39, 110, 46, 0.579); /* Adjust values accordingly */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  
+
+}
+
+.hole-content .scrolling-div .car-race:hover{
+  transform: scale(1.03);
+}
+
+.hole-content .scrolling-div .pc-game {
+
+
+  border-radius: 1px;
+  margin-right: 20px;
+
+  width: 750px;
+  height: 420px;
+  margin-top: 10px;
+  /* border: 2px solid palevioletred; */
+  background-image: url('pc-games.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.5s;
+  box-shadow: 0 15px 90px -15px rgba(149, 62, 47, 0.604); /* Adjust values accordingly */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hole-content .scrolling-div .pc-game:hover{
+  transform: scale(1.03);
+}
+
+.hole-content .scrolling-div .star{
+  border-radius: 1px;
+  margin-right: 20px;
+
+  width: 750px;
+  height: 420px;
+  margin-top: 10px;
+  /* border: 2px solid palevioletred; */
+  background-image: url('star.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.5s;
+  box-shadow: 0 15px 90px -15px rgba(54, 164, 65, 0.764); /* Adjust values accordingly */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  
+}
+
+.hole-content .scrolling-div .star:hover{
+  transform: scale(1.03);
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 80px; /* Initial position of the car game div */
+    width: 400px;
+  }
+  50% {
+    margin-left: -370px; /* Move backward to the position of the microsoft office div */
+    width: 800px;
+  }
+  100% {
+    margin-left: 0px; /* Final position */
+    width: 800px;
+  }
+}
+
+/* CSS for arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  z-index: 101; 
+}
+
+.left-arrow {
+  font-size: 25px;
+  margin-left: 100px;
+  left: 10px; 
+  transition: 0.5s;
+}
+
+.left-arrow:hover{
+  color:  #5b5b9a;
+} 
+
+
+.right-arrow {
+  font-size: 25px;
+  right: 10px;
+  transition: 0.5s;
+}
+
+.right-arrow:hover{
+  color:  #B3B3BA;
+}
+
+.hole-content:hover .arrow {
+  opacity: 1;
+}
+
+.hole-content .arrow {
+  opacity: 0; 
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #232B2B;
+}
+/* Add the following CSS for the slideshow effect */
+/* Add the following CSS for the slideshow effect */
+@keyframes slideshow {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  75% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+.hole-content .scrolling-div .microsoft-office,
+.hole-content .scrolling-div .car-race,
+.hole-content .scrolling-div .pc-game,
+.hole-content .scrolling-div .star {
+  animation: slideshow 4s cubic-bezier(0.4, 0, 0.2, 1) infinite; /* Adjust duration and timing function */
+ 
+}
+@keyframes moveForward {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* ... Your existing CSS ... */
+
+
+/* ... Your existing CSS ... */
+.hole-content .scrolling-div .star:hover{
+  transform: scale(1.03);
+}
+
+/* CSS for arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  z-index: 101; 
+}
+
+.left-arrow {
+  font-size: 50px;
+  margin-left: 100px;
+  left: 10px; 
+  transition: 0.5s;
+}
+
+.left-arrow:hover{
+  color:  #B3B3BA;
+} 
+
+
+.right-arrow {
+  font-size: 50px;
+  right: 10px;
+  transition: 0.5s;
+}
+
+.right-arrow:hover{
+  color:  #B3B3BA;
+}
+
+.hole-content:hover .arrow {
+  opacity: 1;
+}
+
+.hole-content .arrow {
+  opacity: 0; 
+}
+
+.hole-content .scrolling-div {
+  height: 450px;
+  margin-left: 70px;
+  --_spacer: var(--size-3);
+  display: grid;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth; /* Add smooth scrolling behavior */
+}
+
+/* Style for dots */
+.scroll-dots {
+  text-align: center;
+}
+
+.dot-list {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #888;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  transition: all 0.5s;
+}
+
+.dot.active {
+  background-color: #fff;
+}
+
+.scroll-dots .dot:hover{
+  transform: scale(1.4);
+}
+
+.hole-content .lower-wit{
+  margin-top: 30px;
+  margin-left:68px;
+
+  width: 1465px;
+  height: 310px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hole-content .lower-wit div{
+  height: 140px;
+  padding:10px;
+  width: 467px;
+  border-radius: 10px;
+  background-color: #283f3f;
+  margin-right: 10px;
+}
+
+.hole-content .lower-wit .whats div{
+  height: 120px;
+
+  
+  width: 100px;
+  border-radius: 1px;
+  margin-left: 5px;
+  background-image: url('e.jpeg');
+ 
+  
+  background-position: center;
+  background-size: cover;
+}
+.hole-content .lower-wit .instagram div{
+  height: 120px;
+
+  
+  width: 100px;
+  border-radius: 5px;
+  margin-left: 5px;
+  background-image: url('a.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hole-content .lower-wit .telegram div{
+  height: 120px;
+
+  
+  width: 100px;
+  border-radius: 5px;
+  margin-left: 5px;
+  background-image: url('b.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hole-content .lower-wit .netflix div{
+  height: 120px;
+
+  
+  width: 100px;
+  border-radius: 5px;
+  margin-left: 5px;
+  background-image: url('c.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hole-content .lower-wit  .spotify div{
+  height: 120px;
+
+  
+  width: 100px;
+  border-radius: 1px;
+  margin-left: 5px;
+  background-image: url('e.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hole-content .lower-wit .vlc div{
+  height: 120px;
+
+  
+  width: 100px;
+  border-radius: 1px;
+  margin-left: 5px;
+  background-image: url('f.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hole-content .lower-wit .whats p {
+  margin-top: -95px;
+  margin-left: 185px;
+  font-size: 30px; 
+  color: white; /* Set text color to white */
+  background-color: linear-gradient(to right, rgba(67, 32, 193, 0.334), rgba(31, 32, 31, 0.537) 90%);
+}
+
+.hole-content .lower-wit .instagram p {
+  margin-top: -95px;
+  margin-left: 185px;
+  font-size: 30px; 
+  color: white; /* Set text color to white */
+  background-color: linear-gradient(to right, rgba(67, 32, 193, 0.334), rgba(31, 32, 31, 0.537) 90%);
+}
+
+.hole-content .lower-wit .telegram p {
+  margin-top: -95px;
+  margin-left: 185px;
+  font-size: 30px; 
+  color: white; /* Set text color to white */
+  background-color: linear-gradient(to right, rgba(67, 32, 193, 0.334), rgba(31, 32, 31, 0.537) 90%);
+}
+
+.hole-content .lower-wit .vlc p {
+  margin-top: -95px;
+  margin-left: 185px;
+  font-size: 30px; 
+  color: white; /* Set text color to white */
+  background-color: linear-gradient(to right, rgba(67, 32, 193, 0.334), rgba(31, 32, 31, 0.537) 90%);
+}
+.hole-content .lower-wit .spotify p {
+  margin-top: -95px;
+  margin-left: 185px;
+  font-size: 30px; 
+  color: white; /* Set text color to white */
+  background-color: linear-gradient(to right, rgba(67, 32, 193, 0.334), rgba(31, 32, 31, 0.537) 90%);
+}
