@@ -13,8 +13,8 @@ export default function userProf({params}:any){
     const meetingUIRef = useRef<HTMLDivElement>(null);
 console.log(params);
     async function meetingUI(element: any) {
-        const appId = 783427944;
-        const serverSecret = "9d723af5fcd2321bc034e5e7b289ee10";
+        const appId = 1649659605;
+        const serverSecret = "87ee9245057e0ff06b8e871231aed41e";
 
         if (!roomid) {
             console.error("Room ID is undefined");
